@@ -8,6 +8,11 @@ class Car extends Vehicle {
         super();
     }
 
+    @Override
+    void dongCo() {
+
+    }
+
     public static void main(String[] args) {
 // Create a myCar object
         Car myCar = new Car();
