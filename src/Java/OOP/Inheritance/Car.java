@@ -4,6 +4,9 @@ import static java.lang.System.out;
 
 class Car extends Vehicle {
     private String modelName = "Mustang"; // Car attribute
+    Car (){
+        super();
+    }
 
     public static void main(String[] args) {
 // Create a myCar object
