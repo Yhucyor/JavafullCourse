@@ -14,8 +14,18 @@ public class Student {
     public void printInfo(){
         System.out.println("Name: " + name);
         System.out.println("Age: " + age);
+        System.out.println("Address: " + address);
     }
     void setAddress(String address){
         this.address = address;
+    }
+
+    // Hàm tạo không cần kiểm dữ liệu trả về - mặc định là Public
+    Student(){
+
+    }
+    public Student(String name, int age){
+        this.name = name;
+        this.age = age;
     }
 }
