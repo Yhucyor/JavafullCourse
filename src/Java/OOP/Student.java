@@ -6,18 +6,40 @@ public class Student {
     // Object là đối tượng cụ thể - thực thể chi tiết của thực thể đấy
 
     // Thuộc tính của đối tượng Atrribute
-    String name;
-    int age;
-    String address;
+    private String name;
+    private int age;
+    private String address;
+
+    public String getName() {
+        return name;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    void setAddress(String address){
+        this.address = address;
+    }
+
 
     // Phương thức của đối tượng Method
     public void printInfo(){
         System.out.println("Name: " + name);
         System.out.println("Age: " + age);
         System.out.println("Address: " + address);
-    }
-    void setAddress(String address){
-        this.address = address;
     }
 
     // Hàm tạo không cần kiểm dữ liệu trả về - mặc định là Public
