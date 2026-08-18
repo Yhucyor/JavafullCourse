@@ -15,5 +15,12 @@ public class Chuong3 {
             System.out.println("Thực hiện vòng lặp While");
             i--;
         }
+
+        //3. Vòng lặp do While
+        i = 1;
+        do {
+            System.out.println("Vòng lặp do While");
+            i--;
+        } while(i == 0);
     }
 }
