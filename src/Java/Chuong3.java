@@ -8,5 +8,12 @@ public class Chuong3 {
         for(int i = 0; i < 3; i++){
             System.out.println(i);
         }
+
+        //2. Vòng lặp While
+        int i = 2;
+        while(i >= 0){
+            System.out.println("Thực hiện vòng lặp While");
+            i--;
+        }
     }
 }
