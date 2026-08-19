@@ -54,5 +54,13 @@ public class Example {
                 System.out.println("Đơn hàng đã bị hủy.");
                 break;
         }
+
+        // Nhận thông tin phương thức từ form đăng ký
+        PhuongThucThanhToan p = PhuongThucThanhToan.MOMO;
+
+        // Gọi hàm thanh toán. Tự động nó sẽ in ra dòng chữ dành riêng cho MOMO.
+        p.thanhToan(150000);
+
+        // Kết quả in ra: "Thanh toán 150000.0 VNĐ qua Momo. Nhập mật khẩu ví."
     }
 }
