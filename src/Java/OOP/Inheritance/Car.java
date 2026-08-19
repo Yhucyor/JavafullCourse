@@ -9,8 +9,8 @@ class Car extends Vehicle {
     }
 
     @Override
-    void dongCo() {
-
+    public void dongCo() {
+        System.out.println("Dong co Abstract");
     }
 
     public static void main(String[] args) {
