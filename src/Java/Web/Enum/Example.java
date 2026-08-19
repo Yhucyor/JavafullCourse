@@ -34,5 +34,25 @@ public class Example {
         TrangThaiDonHang tuChuoi = TrangThaiDonHang.valueOf("HUY");
         System.out.println("Chuỗi 'HUY' chuyển thành enum: " + tuChuoi.name() + " (Mã: " + tuChuoi.getMa() + ")");
         // Kết quả: Chuỗi 'HUY' chuyển thành enum: HUY (Mã: 6)
+
+        TrangThaiDonHang trangThai = TrangThaiDonHang.DANG_CHUAN_BI;
+
+        switch (trangThai) {
+            case MOI:
+                System.out.println("Đơn hàng mới, cần xác nhận!");
+                break;
+            case XAC_NHAN:
+                System.out.println("Đã xác nhận, chờ đóng gói.");
+                break;
+            case DANG_CHUAN_BI:
+                System.out.println("Đang chuẩn bị hàng, sẽ giao sớm.");
+                break;
+            case DA_GIAO_HANG:
+                System.out.println("Đã giao cho đơn vị vận chuyển.");
+                break;
+            case HUY:
+                System.out.println("Đơn hàng đã bị hủy.");
+                break;
+        }
     }
 }
